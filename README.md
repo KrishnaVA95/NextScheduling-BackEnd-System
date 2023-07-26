@@ -318,7 +318,7 @@ Resposta do servidor:
 
 # <h3 style="color:#b2d9f7;">casos de erro user:</h3>
 `POST`
-certifique-se de que o campo de requisição cumpri os requisitos. 
+certifique-se de que o campo de requisição cumpre os requisitos. 
 Resposta do servidor: 
 `400 Bab Request`
 ```json
@@ -385,7 +385,7 @@ Resposta do servidor:
 
 
 `POST`
-certifique-se de que o campo de requisição cumpri os requisitos. 
+certifique-se de que o campo de requisição cumpre os requisitos. 
 Resposta do servidor: 
 `400 Bab Request`
 ```json
