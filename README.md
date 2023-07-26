@@ -50,7 +50,7 @@ npm run dev
 
 **[⬆ Back to Index](#index)**
 
-# <h1 style="text-align: center; color:#b2d9f7;">Base url</h1>
+# <h1 style="text-align: center; color:#b2d9f7;">Base_URL</h1>
 ```
 localhost:3000
 ```
