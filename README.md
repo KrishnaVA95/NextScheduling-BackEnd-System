@@ -16,6 +16,7 @@
 * [User](#user)
 * [Login](#login)
 * [Contact](#contact)
+* [Endpoints_Error](#endpoints_error)
 * [Libs](#libs)
 
 
@@ -313,6 +314,109 @@ Resposta do servidor:
 
 **[⬆ Back to Index](#index)**
 
+# <h1 style="text-align: center; color:#b2d9f7;">Endpoints_Error</h1>
+
+# <h3 style="color:#b2d9f7;">casos de erro user:</h3>
+`POST`
+certifique-se de que o campo de requisição cumpri os requisitos. 
+Resposta do servidor: 
+`400 Bab Request`
+```json
+{
+	"message": {
+		"name": [
+			"Required"
+		],
+		"email": [
+			"Required"
+		],
+		"password": [
+			"Required"
+		],
+		"phone": [
+			"Required"
+		]
+	}
+}
+```
+
+`PATCH | DELETE`
+Necessario token de autenticação.
+Resposta do servidor: 
+`401 Unauthorized`
+```json
+{
+	"message": "invalid token"
+}
+```
+
+`DELETE | PATCH`
+certifique-se de que o usuário seja ele mesmo. 
+Resposta do servidor: 
+`403 Forbidden`
+```json
+{
+	"message": "Insufficient permission"
+}
+```
+
+# <h3 style="color:#b2d9f7;">casos de erro contact:</h3>
+
+`GET | PATCH | POST | DELETE`
+Necessario token de autenticação.
+Resposta do servidor: 
+`401 Unauthorized`
+```json
+{
+	"message": "invalid token"
+}
+```
+
+`POST | PATCH`
+certifique-se de que o campo email, seja único. 
+Resposta do servidor: 
+`500 Internal server error`
+```json
+{
+	"message": "internal server error"
+}
+```
+
+
+
+`POST`
+certifique-se de que o campo de requisição cumpri os requisitos. 
+Resposta do servidor: 
+`400 Bab Request`
+```json
+{
+	"message": {
+		"name": [
+			"Required"
+		],
+		"email": [
+			"Required"
+		],
+		"phone": [
+			"Required"
+		]
+	}
+}
+```
+
+
+`PATCH | DELETE`
+certifique-se de que o o contato exista. 
+Resposta do servidor: 
+`404`
+```json
+{
+	"message": "contact not found"
+
+}
+```
+
+**[⬆ Back to Index](#index)**
 
 # <h1 style="text-align: center; color:#b2d9f7;">Libs</h1>
 <ul>
@@ -329,9 +433,3 @@ Resposta do servidor:
 </ul>
 
 **[⬆ Back to Index](#index)**
-
-
-O que falta?
-
---> Atualizar/deletar usuario somente se for ele mesmo middlewares.
---> Doc, casos de erro
