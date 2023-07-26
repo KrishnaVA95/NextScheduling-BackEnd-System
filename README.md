@@ -10,9 +10,9 @@
 # <h1 style="text-align: center; color:#b2d9f7;">Index</h1>
 
 * [Introdução](#introdução)
-* [Usando Repositório Localmente](#usando--repositorio--localmente)
-* [Base URL](#base--url)
-* [Endpoints Success](#endpoints--success)
+* [Repositório_local](#repositório_local)
+* [Base_URL](#base_url)
+* [Endpoints_Success](#endpoints_success)
 * [User](#user)
 * [Login](#login)
 * [Contact](#contact)
@@ -26,7 +26,7 @@ O sistema NextScheduling é um software desenvolvido em node.js e gerencia ativi
 </p>
 
 
-# <h1 style="text-align: center; color:#b2d9f7;">Usando Repositório Localmente</h1>
+# <h1 style="text-align: center; color:#b2d9f7;">Repositório_local</h1>
 <p>1- Clone o repositório</p>
 <p>2- Deve ter instalado o banco de dados PostgreSQL</p>
 <p>3-Crie um banco de dados em PostgreSQL</p>
@@ -57,7 +57,7 @@ localhost:3000
 
 **[⬆ Back to Index](#index)**
 
-# <h1 style="text-align: center; color:#b2d9f7;">Endpoints Success</h1>
+# <h1 style="text-align: center; color:#b2d9f7;">Endpoints_Success</h1>
 
 # <h2 style="text-align: center; color:#b2d9f7;">User</h2>
 
